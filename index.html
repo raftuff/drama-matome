@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DRAMA RADAR - 次に観たい海外ドラマ</title>
-<meta name="description" content="海外レビューと日本配信情報をもとに、次に観たい海外ドラマを毎週ピックアップ。サスペンス・ミステリー、犯罪ドラマ、SF、アクション、ドキュメンタリー、ホラーを中心に紹介します。">
+<title>DRAMA RADAR｜海外ドラマの話題作・レビュー・視聴記録</title>
+<meta name="description" content="DRAMA RADARは、海外ドラマを中心に話題の新作情報、実際に視聴した作品のレビュー、2017年から続く視聴記録や年間BESTを紹介する個人サイトです。">
 <link rel="canonical" href="https://raftuff.github.io/drama-radar/">
 <meta name="theme-color" content="#e63946">
 <!-- Favicon / App Icon -->
@@ -16,15 +16,15 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://raftuff.github.io/drama-radar/">
 <meta property="og:site_name" content="DRAMA RADAR">
-<meta property="og:title" content="DRAMA RADAR - 次に観たい海外ドラマ">
-<meta property="og:description" content="海外レビューと日本配信情報をもとに、次に観たい海外ドラマを毎週ピックアップ。">
+<meta property="og:title" content="DRAMA RADAR｜海外ドラマの話題作・レビュー・視聴記録">
+<meta property="og:description" content="海外ドラマの話題作・新作情報、管理人の視聴記録・レビュー・年間BESTを紹介する個人サイト。2017年から続く視聴記録アーカイブも公開中。">
 <meta property="og:image" content="https://raftuff.github.io/drama-radar/hero.jpg?v=20260612">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DRAMA RADAR - 次に観たい海外ドラマ">
-<meta name="twitter:description" content="海外レビューと日本配信情報をもとに、次に観たい海外ドラマを毎週ピックアップ。">
+<meta name="twitter:title" content="DRAMA RADAR｜海外ドラマの話題作・レビュー・視聴記録">
+<meta name="twitter:description" content="海外ドラマの話題作・新作情報、管理人の視聴記録・レビュー・年間BESTを紹介する個人サイト。2017年から続く視聴記録アーカイブも公開中。">
 <meta name="twitter:image" content="https://raftuff.github.io/drama-radar/hero.jpg?v=20260612">
 <!-- Cache control (補助) -->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -35,10 +35,10 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "DRAMA RADAR - 次に観たい海外ドラマ",
+  "name": "DRAMA RADAR｜海外ドラマの話題作・レビュー・視聴記録",
   "alternateName": "DRAMA RADAR",
   "url": "https://raftuff.github.io/drama-radar/",
-  "description": "海外レビューと日本配信情報をもとに、次に観たい海外ドラマを毎週ピックアップ。"
+  "description": "海外ドラマの話題作・新作情報、管理人の視聴記録・レビュー・年間BESTを紹介する個人サイト。2017年から続く視聴記録アーカイブも公開中。"
 }
 </script>
 <!-- 構造化データ: ItemList（今週のピックアップ作品） -->
@@ -659,6 +659,127 @@ footer a:hover { text-decoration: underline; }
 .guide-card-desc { font-size: 12.5px; color: var(--text-muted); line-height: 1.7; }
 .guide-card-cta { font-size: 12px; font-weight: 700; color: var(--accent); margin-top: 2px; }
 
+/* ===== 視聴記録インデックス SECTION ===== */
+/* guides-section のスタイルを継承し、追加分だけ定義 */
+.archive-index-year {
+  display: inline-block;
+  background: #374151;
+  color: #fff;
+  font-size: 10px; font-weight: 800; letter-spacing: 1px;
+  padding: 2px 8px; border-radius: 3px; flex-shrink: 0;
+}
+.archive-index-type {
+  font-size: 10px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.archive-index-type.best { color: #d4af37; }
+
+/* ===== 視聴記録 年別カード ===== */
+.archive-year-card {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px 22px;
+  color: var(--text);
+  display: flex; flex-direction: column; gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+.archive-year-links {
+  display: flex; gap: 10px; margin-top: 6px; flex-wrap: wrap;
+}
+.archive-year-link {
+  font-size: 12px; font-weight: 700; color: var(--accent);
+  text-decoration: none; padding: 5px 12px;
+  border: 1px solid rgba(230,57,70,0.3); border-radius: 20px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.archive-year-link:hover {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+}
+.archive-year-link.best {
+  color: #d4af37; border-color: rgba(212,175,55,0.35);
+}
+.archive-year-link.best:hover {
+  background: #d4af37; color: #fff; border-color: #d4af37;
+}
+
+/* ===== フッター追加ナビ ===== */
+.footer-archive-nav {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.footer-archive-nav a {
+  color: var(--text-muted) !important;
+  font-weight: 600;
+}
+.footer-archive-nav a:hover {
+  color: var(--accent) !important;
+}
+
+/* ===== ARCHIVE HUB 導線 ===== */
+.archive-hub-intro {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.archive-hub-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.archive-hub-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.archive-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.archive-stat-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.archive-stat-value {
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+.archive-stat-sep {
+  font-size: 13px;
+  color: var(--border);
+  align-self: center;
+}
+.archive-hub-cta {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+.archive-hub-cta:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+.best-no-record {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 5px 12px;
+  border: 1px dashed var(--border);
+  border-radius: 20px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
   .hero { min-height: 280px; }
@@ -696,8 +817,8 @@ footer a:hover { text-decoration: underline; }
         <span class="hero-brand-bar"></span>
         <span class="hero-brand-name">DRAMA RADAR</span>
       </div>
-      <h1 class="hero-title">次に観たい海外ドラマ</h1>
-      <p class="hero-subtitle">毎週更新 — Rotten Tomatoes × 日本配信情報</p>
+      <h1 class="hero-title">海外ドラマの話題作と、観てきた記録。</h1>
+      <p class="hero-subtitle">新作情報・レビュー・年間BESTを、視聴記録とともに紹介します。</p>
     </div>
     <div class="hero-right">
       <span class="hero-update-date" id="update-date">読み込み中...</span>
@@ -752,6 +873,112 @@ footer a:hover { text-decoration: underline; }
 
 </main>
 
+<!-- ===== 視聴記録 SECTION ===== -->
+<section class="guides-section">
+  <div class="guides-section-inner">
+    <div class="guides-section-head">
+      <span class="guides-editorial-label">ARCHIVE</span>
+      <h2 class="guides-heading">2017年からの視聴記録</h2>
+    </div>
+    <!-- Archive Hub 導線 -->
+    <div class="archive-hub-intro">
+      <p class="archive-hub-desc">海外ドラマ・映画・ドキュメンタリーを中心に、2017年から視聴した作品を年ごとに記録しています。6年間の視聴記録は計1,138件。各年の視聴一覧と年間BESTをまとめています。</p>
+      <div class="archive-hub-stats">
+        <div class="archive-stat">
+          <span class="archive-stat-label">SINCE</span>
+          <span class="archive-stat-value">2017</span>
+        </div>
+        <span class="archive-stat-sep">—</span>
+        <div class="archive-stat">
+          <span class="archive-stat-value">1,138</span>
+          <span class="archive-stat-label">VIEWING RECORDS</span>
+        </div>
+      </div>
+      <a href="./archive/" class="archive-hub-cta">視聴アーカイブを見る →</a>
+    </div>
+    <div class="guides-grid">
+      <!-- 2022年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2022</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2022年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ44・映画43・ドキュメンタリー27｜計114本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2022.html" class="archive-year-link">記録を見る →</a>
+          <a href="./best/2022.html" class="archive-year-link best">★ 年間BESTを見る →</a>
+        </div>
+      </div>
+      <!-- 2021年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2021</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2021年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ75・映画114・ドキュメンタリー50・バラエティ2｜計241本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2021.html" class="archive-year-link">記録を見る →</a>
+          <a href="./best/2021.html" class="archive-year-link best">★ 年間BESTを見る →</a>
+        </div>
+      </div>
+      <!-- 2020年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2020</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2020年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ79・映画113・ドキュメンタリー42・アニメ・バラエティなど｜計238本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2020.html" class="archive-year-link">記録を見る →</a>
+          <a href="./best/2020.html" class="archive-year-link best">★ 年間BESTを見る →</a>
+        </div>
+      </div>
+      <!-- 2019年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2019</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2019年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ102・映画103・ドキュメンタリー36・バラエティ2｜計243本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2019.html" class="archive-year-link">記録を見る →</a>
+          <a href="./best/2019.html" class="archive-year-link best">★ 年間BESTを見る →</a>
+        </div>
+      </div>
+      <!-- 2018年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2018</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2018年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ100・映画54・ドキュメンタリー23・バラエティ7｜計184本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2018.html" class="archive-year-link">記録を見る →</a>
+          <a href="./best/2018.html" class="archive-year-link best">★ 年間BESTを見る →</a>
+        </div>
+      </div>
+      <!-- 2017年 -->
+      <div class="archive-year-card">
+        <div class="guide-card-top">
+          <span class="archive-index-year">2017</span>
+          <span class="archive-index-type">VIEWING ARCHIVE</span>
+        </div>
+        <p class="guide-card-title">2017年の視聴記録</p>
+        <p class="guide-card-desc">ドラマ57・映画49・ドキュメンタリー12｜計118本</p>
+        <div class="archive-year-links">
+          <a href="./archive/2017.html" class="archive-year-link">記録を見る →</a>
+          <span class="best-no-record">BEST記録なし</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 特集 SECTION ===== -->
 <section class="guides-section">
   <div class="guides-section-inner">
@@ -787,6 +1014,9 @@ footer a:hover { text-decoration: underline; }
   <div class="footer-nav">
     <a href="about.html" class="footer-about-link">About / Contact</a>
   </div>
+  <p class="footer-archive-nav">
+    <a href="archive/">視聴アーカイブ</a> · <a href="best/2022.html">年間BEST</a>
+  </p>
   スコアは <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">Rotten Tomatoes</a> の批評家スコアを参考にしています。配信情報は掲載時点のものです。<br>
   リンク先はできるだけ日本語の配信・公式情報へ遷移するようにしていますが、作品によっては検索結果や関連ページへ移動する場合があります。
 </footer>
@@ -843,7 +1073,7 @@ function _findShow(slug) {
 
 function _shareText(show) {
   var url = BASE_URL + '#' + show.slug;
-  return '『' + show.titleJa + '』｜次に観たい海外ドラマ\n'
+  return '『' + show.titleJa + '』｜DRAMA RADAR\n'
        + 'スコア：' + show.rtScore + '%\n'
        + '配信：' + show.streaming.service + '\n'
        + url;
@@ -915,7 +1145,7 @@ function drama_share(slug, btn) {
   if (!show) return;
   if (navigator.share) {
     navigator.share({
-      title: '『' + show.titleJa + '』｜次に観たい海外ドラマ',
+      title: '『' + show.titleJa + '』｜DRAMA RADAR',
       text:  'スコア：' + show.rtScore + '%　配信：' + show.streaming.service,
       url:   BASE_URL + '#' + show.slug
     }).catch(function() {});
